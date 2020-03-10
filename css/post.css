@@ -1,0 +1,21 @@
+.post{
+    display: inline-block;
+    width:100%;
+    margin-bottom:40px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+
+}
+    .post > .header{
+        display: inline-block;
+        width:100%;
+    }
+    .post > .content{
+        display: inline-block;
+        width:100%;
+    }
+    .post > .footer{
+        display: inline-block;
+        width:100%;
+    }

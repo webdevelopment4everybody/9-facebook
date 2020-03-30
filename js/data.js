@@ -1,49 +1,184 @@
 "use strict";
 
-
-// const feed = ['asd', 'as', 'qwe'];
 const feed = [
+    // {
+    //     author: {
+    //         name: 'Vardenis',
+    //         surname: 'Pavardenis',
+    //         img: 'user.png',
+    //         link: '#'
+    //     },
+    //     time: 1583832433393,
+    //     content: {
+    //         text: 'hagsld khfasdfl asldfoa hsdljfa lsdjfjasd',
+    //         background: 'red',
+    //         images: [
+    //             'pic1.jpg',
+    //             'pic2.jpg',
+    //             'pic3.jpg'
+    //         ]
+    //     }
+    // },
     {
         author: {
-        name:'Vardenis1',
-        surname:'Pavardenis',
-        img:'user.png',
-        link:'#'
+            name: 'Chuck',
+            surname: 'Norris',
+            img: 'chuck.jpg',
+            link: '#'
         },
-        postingTime: 1583832446837,
-        content:{
-            text:'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ullam sunt. Nam quae esse, maxime nemo in minima quo nulla?'
-            //daug teksto
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo.'
         }
     },
     {
         author: {
-        name:'Vardenis2',
-        surname:'Pavardenis',
-        img:'user.png',
-        link:'#'
+            name: 'Vardenis2',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
         },
-        postingTime: 1583832446837,
-        content:{
-            text:'Lorem ipsum, dolor sit amet'
-            //labai mazai teksto
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo.'
         }
     },
     {
         author: {
-            name:'Vardenis3',
-            surname:'Pavardenis',
-            img:'user.png',
-            link:'#'
+            name: 'Vardenis2',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
         },
-        postingTime: 1583832446837,
-        content:{
-            text:'Lorem ipsum, dolor sit amet',
-            background: 'red'
-            //labai mazai teksto ir backgroundo splava
-
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut dolores soluta impedit, nostrum consequatur nam! Consectetur ipsam quas illo.'
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis3',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            images: [
+                'pic1.jpg'
+            ]
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            images: [
+                'pic1.jpg',
+                'pic2.jpg'
+            ]
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            images: [
+                'pic1.jpg',
+                'pic2.jpg',
+                'pic3.jpg'
+            ]
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            images: [
+                'pic1.jpg',
+                'pic2.jpg',
+                'pic3.jpg',
+                'pic4.jpg'
+            ]
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+            images: [
+                'pic1.jpg',
+                'pic2.jpg',
+                'pic3.jpg',
+                'pic4.jpg',
+                'pic5.jpg',
+                'pic6.jpg',
+                'pic7.jpg'
+            ]
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet.'
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet.',
+            background: 'red',
+            images: []
+        }
+    },
+    {
+        author: {
+            name: 'Vardenis',
+            surname: 'Pavardenis',
+            img: 'user.png',
+            link: '#'
+        },
+        time: 1583832433393,
+        content: {
+            text: 'Lorem ipsum dolor sit amet.',
+            background: 'orange'
         }
     }
-
-    
 ];

@@ -16,7 +16,14 @@ function renderFeed( data ) {
         HTML += renderPost(postData);
     }
 
-    return document.querySelector('.feed').innerHTML = HTML;
+    document.querySelector('.feed').innerHTML = HTML;
+
+    const readMores = document.querySelectorAll('.post p > .more');
+
+    for ( let i=0; i<readMores.length; i++ ) {
+        const readMore = readMores[i];
+        readMore.addEventListener('click', readMoreClick );
+    }
 }
 
 function renderPost( data ) {
@@ -204,17 +211,31 @@ function convertTime( timestamp ) {
     return Math.floor(days /365)+'y';
 }
 
-renderFeed( feed );
-
-const readMores = document.querySelectorAll('.post p > .more');
-
-for ( let i=0; i<readMores.length; i++ ) {
-    const readMore = readMores[i];
-    readMore.addEventListener('click', readMoreClick );
-}
-
 function readMoreClick( event ) {
     const p = event.target.closest('p');
     const fullText = p.dataset.fulltext;
     return p.innerText = fullText;
 }
+
+// renderFeed( feed );
+
+
+function requestData( filename, callback ){
+    var xhttp = new XMLHttpRequest();// uzkuria kazka naujo
+    xhttp.onreadystatechange = function() { //kai sukurtas obj bus pasiruoses
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+      callback(JSON.parse(xhttp.responseText));//tada i tam tikra dok vieta irasyti vidini html
+       //response tekstas parametras obj
+    }
+};
+xhttp.open("GET", "https://webdevelopment4everybody.github.io/9-facebook/data/" +filename, true);
+xhttp.send();
+
+}
+
+//atsisunciame duomenis is serverio
+//kai gauname -paleidziamas ju piesima
+requestData('data.json', renderFeed);
+
+
